@@ -1,0 +1,6 @@
+version: "2"
+services:
+  netbridge:
+    container_name: netbridge
+    build: .
+    network_mode: host

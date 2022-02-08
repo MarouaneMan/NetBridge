@@ -1,0 +1,6 @@
+build/
+bin/test
+bin/server/Debug/NetBridgeServer.ilk
+bin/server/Debug/NetBridgeServer.pdb
+bin/client/Debug/NetBridge.ilk
+bin/client/Debug/NetBridge.pdb

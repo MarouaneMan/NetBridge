@@ -1,0 +1,3 @@
+[submodule "sgxclib"]
+	path = sgxclib
+	url = https://gitlab.gamestream.biz/marouane/sgxclib

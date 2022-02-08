@@ -1,0 +1,28 @@
+cmake_minimum_required(VERSION 3.0.2)
+
+set(PROJECT_NAME "sgxlib")
+
+PROJECT(${PROJECT_NAME})
+
+# BOOST
+find_boost(system thread regex)
+
+# SGXLIB INCLUDE DIR
+set(SGXLIB_INCLUDE_DIR ${CMAKE_CURRENT_SOURCE_DIR} ${Boost_INCLUDE_DIR} PARENT_SCOPE)
+
+# ADD SOURCE
+set(SRC_DIR ${CMAKE_CURRENT_SOURCE_DIR}/${PROJECT_NAME})
+file(
+	GLOB_RECURSE
+	SRC_LIST
+	${SRC_DIR}/*
+)
+
+# ADD LIBRARY
+add_library(${PROJECT_NAME} STATIC ${SRC_LIST})
+
+# LINK LIBRARIES
+target_link_libraries(${PROJECT_NAME} ${Boost_LIBRARIES})
+
+# GROUP FOLDERS
+group_folders(${SRC_LIST})
