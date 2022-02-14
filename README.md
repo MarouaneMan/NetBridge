@@ -3,7 +3,7 @@
 ![Alt text](client/resources/capture.png)
 
 ## Description:
-Light solution to bypass Firewalls/Nat...
+Lite solution to bypass Firewalls/Nat...
 ## How to:
 **Basic usage**:
 - Run NetbridgeClient on your remote machine
