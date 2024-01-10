@@ -1,9 +1,8 @@
 # NetBridge
+Lightweight solution to bridge connections.
 
 ![Alt text](client/resources/capture.png)
 
-## Description:
-Lite solution to bypass Firewalls/Nat...
 ## How to:
 **Basic usage**:
 - Run NetbridgeClient on your remote machine
